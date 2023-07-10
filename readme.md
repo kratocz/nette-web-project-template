@@ -30,6 +30,28 @@ Requirements
 - Web Project for Nette 3.1 requires PHP 8.0
 
 
+Missing composer or php
+-----------------------
+
+Don't you have `composer` installed? Install it or use Docker image:
+```shell
+docker run --rm --interactive --tty --volume $PWD:/app composer <command>
+```
+instead of:
+```shell
+composer <command>
+```
+
+Don't you have even `php` installed? Install it or use Docker image:
+```shell
+docker run --rm --interactive --tty --volume $PWD:/app --workdir /app -p 8000:8000 php:8.2 -S 0.0.0.0:8000 -t www
+```
+instead of:
+```shell
+php -S localhost:8000 -t www
+```
+
+
 Installation
 ------------
 
