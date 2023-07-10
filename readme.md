@@ -13,10 +13,11 @@ If you like Nette, **[please make a donation now](https://nette.org/donate)**. T
 If this fork helped you, **[please donate me](https://www.patreon.com/kratocz)**. Thank you!
 
 
-Fork modifications
-------------------
+All fork modifications
+----------------------
 
 * .gitignore
+* This info in the file readme.md
 * app/Components/BaseControl.php
 * app/Components/BaseForm.php
 * app/Presenters/BasePresenter.php
