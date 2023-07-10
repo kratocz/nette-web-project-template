@@ -16,7 +16,7 @@ If this fork helped you, **[please donate me](https://www.patreon.com/kratocz)**
 All fork modifications
 ----------------------
 
-* .gitignore
+* [.gitignore](.gitignore)
 * This info in the file [readme.md](readme.md)
 * [app/Components/BaseControl.php](app/Components/BaseControl.php)
 * [app/Components/BaseForm.php](app/Components/BaseForm.php)
