@@ -1,1 +1,7 @@
-config/local.neon
+/app/config/config.local.neon
+/nbproject/private
+/node_modules/
+/npm-debug.log
+/www/images/upload/*
+/.idea/
+/.env
