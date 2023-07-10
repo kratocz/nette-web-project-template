@@ -16,7 +16,11 @@ If this fork helped you, **[please donate me](https://www.patreon.com/kratocz)**
 Fork modifications
 ------------------
 
-* (none, yet)
+* .gitignore
+* app/Components/BaseControl.php
+* app/Components/BaseForm.php
+* app/Presenters/BasePresenter.php
+* app/Repositories/BaseDatabaseRepository.php
 
 
 Requirements
