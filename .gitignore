@@ -5,3 +5,4 @@
 /www/images/upload/*
 /.idea/
 /.env
+/vendor/
