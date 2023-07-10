@@ -17,11 +17,11 @@ All fork modifications
 ----------------------
 
 * .gitignore
-* This info in the file readme.md
-* [app/Components/BaseControl.php](blob/master/app/Components/BaseControl.php)
-* [app/Components/BaseForm.php](blob/master/app/Components/BaseForm.php)
-* [app/Presenters/BasePresenter.php](blob/master/app/Presenters/BasePresenter.php)
-* [app/Repositories/BaseDatabaseRepository.php](blob/master/app/Repositories/BaseDatabaseRepository.php)
+* This info in the file [readme.md](readme.md)
+* [app/Components/BaseControl.php](app/Components/BaseControl.php)
+* [app/Components/BaseForm.php](app/Components/BaseForm.php)
+* [app/Presenters/BasePresenter.php](app/Presenters/BasePresenter.php)
+* [app/Repositories/BaseDatabaseRepository.php](app/Repositories/BaseDatabaseRepository.php)
 
 
 Requirements
