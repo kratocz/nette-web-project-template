@@ -22,6 +22,7 @@ All fork modifications
 * [app/Components/BaseForm.php](app/Components/BaseForm.php)
 * [app/Presenters/BasePresenter.php](app/Presenters/BasePresenter.php)
 * [app/Repositories/BaseDatabaseRepository.php](app/Repositories/BaseDatabaseRepository.php)
+* Presenter and Latte template files directory structure changed, see [app/Presenters](app/Presenters)
 
 
 Requirements
