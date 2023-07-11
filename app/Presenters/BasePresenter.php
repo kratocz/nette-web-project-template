@@ -24,6 +24,31 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 		}
 	}
 
+
+	/**
+	 * Formats view template file names.
+	 * @return array
+	 */
+	public function formatTemplateFiles(): array
+	{
+		$files = parent::formatTemplateFiles();
+		$dir = dirname($this->getReflection()->getFileName());
+		$files[] = "$dir/$this->view.latte";
+		return $files;
+	}
+
+	/**
+	 * Formats layout template file names.
+	 * @return array
+	 */
+	public function formatLayoutTemplateFiles(): array
+	{
+		$files = parent::formatLayoutTemplateFiles();
+		$dir = dirname($this->getReflection()->getFileName());
+		$files[] = dirname($dir) . '/@layout.latte';
+		return $files;
+	}
+
 	/**
 	 * Sends JSON data to the output.
 	 * @param mixed

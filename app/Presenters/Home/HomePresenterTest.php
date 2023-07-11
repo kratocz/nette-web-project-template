@@ -1,14 +1,14 @@
 <?php
 
 // Usages (execute it in the project root directory):
-//   docker run --rm --interactive --tty --volume $PWD:/app --workdir /app php:8.2 php app/Presenters/HomePresenterTest.php
-//   docker run --rm --interactive --tty --volume $PWD:/app --workdir /app php:8.2 vendor/bin/tester -C app # executes ALL tests in the directory app
+//   docker run --rm --interactive --tty --volume $PWD:/app --workdir /app --user $UID:$GID  php:8.2 php app/Presenters/Home/HomePresenterTest.php
+//   docker run --rm --interactive --tty --volume $PWD:/app --workdir /app --user $UID:$GID  php:8.2 vendor/bin/tester -C app # executes ALL tests in the directory app
 
 declare(strict_types=1);
 
 namespace App\Presenters;
 
-require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . '/../../../vendor/autoload.php';
 
 use Tester\Assert;
 
@@ -53,7 +53,7 @@ class HomePresenterTest extends \Tester\TestCase
 		$html = ob_get_clean();
 		$dom = \Tester\DomQuery::fromHtml($html);
 
-		Assert::true($dom->has('div[id="banner"]'));
+		Assert::true($dom->has('div[id="banner"]'), "HTML:\n$html");
 	}
 }
 
