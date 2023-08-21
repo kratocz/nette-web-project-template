@@ -25,6 +25,7 @@
 		"symfony/thanks": "^1"
 	},
 	"autoload": {
+		"exclude-from-classmap": ["**Test.php"],
 		"psr-4": {
 			"App\\": "app"
 		}
